@@ -1,0 +1,151 @@
+/**
+RESET
+*/
+:root {
+    --green-color: #008A09;
+    --black-color: #202020;
+	--grey-color: #D9D9D9;
+    --beige-color: #efd1aa;
+	--red-color: #9f3615;
+    --white-color: #FFF;
+	--violet-color: #fcf5ff
+}
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+html {
+    font-size: 62.5%;
+    font-size: calc(1em * 0.625);
+    scroll-behavior: smooth
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    margin: 10rem;
+    padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
+    color: var(--black-color);
+    background-color: var(--beige-color);
+	font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    position: relative;
+    overflow-x: hidden;
+    font-display: swap
+}
+li {
+    padding-left: 1rem;
+    margin-bottom: 1rem
+}
+li::marker {
+    color: var(--red-color);
+    font-weight: 600;
+    margin-right: 2rem
+}
+a {
+    color: var(--calypso-color);
+	outline: 2px solid transparent
+	
+}
+a:focus {
+    outline: 2px solid var(--black-color);
+	color: var(--black-color)
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.3;
+    color: var(--red-color)
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: var(--black-color)
+}
+h2 {
+    font-size: 5rem
+}
+h3 {
+    font-size: 2rem
+}
+img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+	height: auto
+}
+img:not([alt]){
+  outline: 3px solid var(--red-color)
+}
+section {
+    margin: 3rem 0
+}
+p {
+    margin: 1rem 0;
+	word-wrap: break-word
+}
+.wrapper {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 5rem;
+    border-radius: 5rem;
+    background-color: var(--white-color)
+}
+.preparation {
+    padding: 2rem;
+    background-color: var(--violet-color);
+    border-radius: 2rem
+}
+.preparation h2 {
+    font-size: 2rem;
+    color: #9d346d
+}
+table {
+    width: 100%
+}
+caption {
+    text-align: left;
+    margin-bottom: 2rem
+}
+table, th, td {
+    padding: 1rem;
+    padding-left: 3rem
+}
+table tr:not(:last-child) td {
+    border-bottom: 1px solid var(--grey-color);
+    border-collapse: collapse
+}
+td.values {
+    color: var(--red-color);
+    font-weight: 700
+}
+
+@media screen and (max-width: 48em) {
+    body {
+        margin:0
+    }
+    .wrapper {
+        border-radius: 0;
+        padding: 5px
+    }
+    h1 {
+        font-size: 3.5rem
+    }
+    h2 {
+        font-size: 3rem
+    }
+}
